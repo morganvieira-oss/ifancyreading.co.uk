@@ -29,13 +29,13 @@ export function Navbar() {
   const isMenuVisible = menuState !== "closed";
 
   return (
-    <nav className="border-b border-primary bg-bg">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-semibold text-primary">
+    <nav className="border-primary bg-bg border-b">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="flex h-16 items-center justify-between">
+          <Link href="/" className="text-primary text-xl font-semibold">
             i fancy reading
           </Link>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden space-x-8 md:flex">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.name}
@@ -48,14 +48,14 @@ export function Navbar() {
           </div>
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-green-01 font-medium hover:text-primary hover:font-bold"
+            className="text-green-01 hover:text-primary p-2 font-medium hover:font-bold md:hidden"
             aria-label="Toggle menu"
           >
             {isMenuVisible ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
         <div
-          className={`md:hidden grid transition-all duration-500 ease-in-out ${
+          className={`grid transition-all duration-500 ease-in-out md:hidden ${
             menuState === "open"
               ? "grid-rows-[1fr] opacity-100"
               : "grid-rows-[0fr] opacity-0"

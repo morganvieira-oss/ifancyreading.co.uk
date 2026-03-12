@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="max-w-3xl mx-auto px-4">
+    <main className="mx-auto max-w-3xl px-4">
       <Hero
         title="page not found."
         subtitle="its not you, its more than likely me."
       />
 
-      <div className="space-y-8 text-primary pb-16">
+      <div className="text-primary space-y-8 pb-16">
         <p>
           i've probably fucked something up somewhere. either way, this page
           doesn't exist.

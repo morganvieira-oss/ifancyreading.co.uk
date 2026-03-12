@@ -6,24 +6,24 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "binding": "ASSETS",
-    "directory": ".open-next/assets"
+    "directory": ".open-next/assets",
   },
   "images": {
-    "binding": "IMAGES"
+    "binding": "IMAGES",
   },
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "ifancyreading"
-    }
+      "service": "ifancyreading",
+    },
   ],
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "routes": [
     {
       "pattern": "ifancyreading.co.uk",
-      "custom_domain": true
-    }
-  ]
+      "custom_domain": true,
+    },
+  ],
 }

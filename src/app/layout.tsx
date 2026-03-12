@@ -48,7 +48,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
       </head>
-      <body className="bg-bg min-h-screen flex flex-col">
+      <body className="bg-bg flex min-h-screen flex-col">
         <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />

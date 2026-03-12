@@ -21,11 +21,11 @@ export function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="border-t border-primary bg-bg mt-auto">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+    <footer className="border-primary bg-bg mt-auto border-t">
+      <div className="mx-auto max-w-7xl px-4 py-8">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="max-w-xs">
-            <h4 className="text-xl font-semibold text-primary mb-4">
+            <h4 className="text-primary mb-4 text-xl font-semibold">
               i fancy reading
             </h4>
             <p className="text-green-01">
@@ -36,18 +36,18 @@ export function Footer() {
 
           <div className="flex flex-col gap-6 md:flex-row md:gap-8">
             <div>
-              <h4 className="text-lg font-semibold text-primary mb-1 font-lekton">
+              <h4 className="text-primary font-lekton mb-1 text-lg font-semibold">
                 this site
               </h4>
-              <ul className="space-y-2 text-green-01">
+              <ul className="text-green-01 space-y-2">
                 {SITE_LINKS.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
                       className={`border-b transition-colors ${
                         pathname === link.href
-                          ? "border-primary font-bold text-primary"
-                          : "border-transparent font-medium hover:text-primary hover:border-primary"
+                          ? "border-primary text-primary font-bold"
+                          : "hover:text-primary hover:border-primary border-transparent font-medium"
                       }`}
                     >
                       {link.name}
@@ -58,10 +58,10 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-primary mb-1 font-lekton">
+              <h4 className="text-primary font-lekton mb-1 text-lg font-semibold">
                 resources
               </h4>
-              <ul className="space-y-2 text-green-01">
+              <ul className="text-green-01 space-y-2">
                 {UK_RESOURCES.map((link) => (
                   <li key={link.href}>
                     <a

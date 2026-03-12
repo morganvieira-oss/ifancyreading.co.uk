@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 
 export default function UnderConstruction() {
   return (
-    <main className="max-w-3xl mx-auto px-4">
+    <main className="mx-auto max-w-3xl px-4">
       <Hero
         title="not quite ready."
         subtitle="this page is still being built"
       />
 
-      <div className="space-y-8 text-primary pb-16">
+      <div className="text-primary space-y-8 pb-16">
         <p>check back soon x</p>
 
         <hr className="border-green-02 my-8" />
